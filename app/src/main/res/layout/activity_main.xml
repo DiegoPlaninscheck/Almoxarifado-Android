@@ -27,6 +27,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#0047BD"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2" />
@@ -71,11 +72,12 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/esqueciMinhaSenhaText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
+        android:onClick="redefinicaoSenha"
         android:text="Esqueci minha senha"
         android:textColor="#999999"
         android:textSize="10sp"
@@ -95,7 +97,7 @@
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/esqueciMinhaSenhaText"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView

@@ -5,25 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class RedefinicaoSenha extends AppCompatActivity {
 
-    private TextView esqueciMinhaSenha;
+    private Button confimarBotao;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        esqueciMinhaSenha = findViewById(R.id.esqueciMinhaSenhaText);
+        setContentView(R.layout.activity_redefinicao_senha);
+        confimarBotao = findViewById(R.id.confimarBotao);
     }
 
-    public void redefinicaoSenha(View view){
-        esqueciMinhaSenha.setOnClickListener(new View.OnClickListener() {
+    public void confimarRedefinicaoSenha(View view){
+        confimarBotao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_redefinicao_senha);
+                setContentView(R.layout.activity_main);
             }
         });
     }
