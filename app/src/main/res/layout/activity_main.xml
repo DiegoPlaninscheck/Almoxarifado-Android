@@ -36,8 +36,8 @@
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:layout_marginTop="40dp"
-        android:autoText="false"
         android:background="@drawable/input"
+        android:drawableLeft="@drawable/user"
         android:ems="10"
         android:hint="Usuário"
         android:inputType="textPersonName"
@@ -53,8 +53,9 @@
         android:layout_width="250dp"
         android:layout_height="35dp"
         android:layout_marginTop="20dp"
-        android:autoText="false"
         android:background="@drawable/input"
+        android:drawableLeft="@drawable/lock"
+        android:drawableRight="@drawable/eye"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
@@ -81,11 +82,11 @@
     <Button
         android:id="@+id/button2"
         style="@style/Widget.MaterialComponents.Button.Icon"
-        app:icon="@drawable/sign_in_alt"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/button"
+        android:drawableLeft="@drawable/signinalt"
         android:text="Entrar"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
@@ -130,11 +131,11 @@
     <Button
         android:id="@+id/button3"
         style="@style/Widget.MaterialComponents.Button.Icon"
-        app:icon="@drawable/g"
         android:layout_width="170dp"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button"
+        android:drawableLeft="@drawable/g"
         android:text="Entrar com o google"
         android:textColor="#ffffff"
         android:textSize="10sp"
@@ -175,45 +176,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/sesi_senai_branca" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
-        app:srcCompat="@drawable/user" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword3"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword3"
-        app:srcCompat="@drawable/lock" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword3"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword3"
-        app:srcCompat="@drawable/eye" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3"
-        app:srcCompat="@drawable/g" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
