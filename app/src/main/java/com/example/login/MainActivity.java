@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView esqueciMinhaSenha;
+    private TextView cadastro;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -17,13 +18,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         esqueciMinhaSenha = findViewById(R.id.esqueciMinhaSenhaText);
+        cadastro = findViewById(R.id.cadastroText);
     }
 
-    public void redefinicaoSenha(View view){
+    public void redefinicaoSenha(View view) {
         esqueciMinhaSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setContentView(R.layout.activity_redefinicao_senha);
+            }
+        });
+    }
+
+    public void cadastro(View view) {
+        cadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_cadastro);
             }
         });
     }
