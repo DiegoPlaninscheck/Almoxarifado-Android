@@ -3,6 +3,7 @@ package com.example.login;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -22,20 +23,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void redefinicaoSenha(View view) {
-        esqueciMinhaSenha.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_redefinicao_senha);
-            }
-        });
+        esqueciMinhaSenha.setOnClickListener(v -> irRedefinicaoSenha());
     }
 
+    private void irRedefinicaoSenha() {
+        Intent intent = new Intent(this, RedefinicaoSenha.class);
+        startActivity(intent);
+        finish();
+    }
+
+
     public void cadastro(View view) {
-        cadastro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_cadastro);
-            }
-        });
+        cadastro.setOnClickListener(v -> irCadastro());
+    }
+
+    private void irCadastro() {
+        Intent intent = new Intent(this, Cadastro.class);
+        startActivity(intent);
+        finish();
     }
 }

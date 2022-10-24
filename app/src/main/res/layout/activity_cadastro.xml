@@ -109,9 +109,10 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/confirmarBotao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="confirmarCadastro"
         android:text="Confirmar"
         app:layout_constraintBottom_toBottomOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="@+id/view3"

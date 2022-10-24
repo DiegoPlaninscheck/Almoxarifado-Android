@@ -3,6 +3,7 @@ package com.example.login;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,20 +24,16 @@ public class RedefinicaoSenha extends AppCompatActivity {
     }
 
     public void confimarRedefinicaoSenha(View view) {
-        confimarBotao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_main);
-            }
-        });
+        confimarBotao.setOnClickListener(v -> irMainPage());
+    }
+
+    private void irMainPage() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     public void voltar(View view) {
-        voltarIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                setContentView(R.layout.activity_main);
-            }
-        });
+        voltarIcon.setOnClickListener(v -> irMainPage());
     }
 }
