@@ -27,13 +27,13 @@ public class Cadastro extends AppCompatActivity {
         confirmarBotao.setOnClickListener(v -> irMainPage());
     }
 
-    public void voltar(View view) {
-        voltarIcon.setOnClickListener(v -> irMainPage());
-    }
-
     private void irMainPage() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void voltar(View view) {
+        voltarIcon.setOnClickListener(v -> irMainPage());
     }
 }
