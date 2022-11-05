@@ -21,19 +21,14 @@ public class Cadastro extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
         voltarIcon = findViewById(R.id.voltarIconCadastro);
         confirmarBotao = findViewById(R.id.confimarBotao);
-    }
 
-    public void confirmarCadastro(View view) {
         confirmarBotao.setOnClickListener(v -> irMainPage());
+        voltarIcon.setOnClickListener(v -> irMainPage());
     }
 
     private void irMainPage() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    public void voltar(View view) {
-        voltarIcon.setOnClickListener(v -> irMainPage());
     }
 }

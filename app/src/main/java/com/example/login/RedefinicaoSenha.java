@@ -21,19 +21,14 @@ public class RedefinicaoSenha extends AppCompatActivity {
         setContentView(R.layout.activity_redefinicao_senha);
         confimarBotao = findViewById(R.id.confimarBotao);
         voltarIcon = findViewById(R.id.voltarIconRedefinicaoSenha);
-    }
 
-    public void confimarRedefinicaoSenha(View view) {
         confimarBotao.setOnClickListener(v -> irMainPage());
+        voltarIcon.setOnClickListener(v -> irMainPage());
     }
 
     private void irMainPage() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    public void voltar(View view) {
-        voltarIcon.setOnClickListener(v -> irMainPage());
     }
 }
