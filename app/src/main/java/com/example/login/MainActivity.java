@@ -32,18 +32,15 @@ public class MainActivity extends AppCompatActivity {
     private void irParaInicio() {
         Intent intent = new Intent(this, Inicio.class);
         startActivity(intent);
-        finish();
     }
 
     private void irRedefinicaoSenha() {
         Intent intent = new Intent(this, RedefinicaoSenha.class);
         startActivity(intent);
-        finish();
     }
 
     private void irCadastro() {
         Intent intent = new Intent(this, Cadastro.class);
         startActivity(intent);
-        finish();
     }
 }
